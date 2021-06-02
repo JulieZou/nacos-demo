@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: NACOS-PROVIDER
+nacos:
+  config:
+    server-addr: localhost:8001
+  discovery:
+    server-addr: localhost:8001
+management:
+  endpoints:
+    web:
+      exposure:
+        include=*:
